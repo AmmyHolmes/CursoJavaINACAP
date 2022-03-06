@@ -1,0 +1,174 @@
+Guía de ejercicios Tablas de Verdad
+
+1.	NOT ( V OR F XOR F OR V OR V OR V XOR F )
+    NOT( V        XOR F OR V OR V OR V XOR F )
+	NOT(       V        OR V OR V OR V XOR F )
+	NOT(       V             OR V OR V XOR F )
+	NOT(       V                  OR V XOR F )
+	NOT(       V                       XOR F )
+    NOT(       V                             )
+    F
+
+
+2.	F AND F AND F AND F AND NOT( F AND F AND F AND F AND F AND F AND F )
+	F AND F AND F AND F AND NOT(   F     AND F AND F AND F AND F AND F )
+	F AND F AND F AND F AND NOT(   F           AND F AND F AND F AND F )
+	F AND F AND F AND F AND NOT(             F       AND F AND F AND F )
+	F AND F AND F AND F AND NOT(             F             AND F AND F )
+	F AND F AND F AND F AND NOT(             F                   AND F )
+	F AND F AND F AND F AND NOT(             F                         )
+    F AND F AND F AND F AND V
+    F       AND F AND F AND V
+	F             AND F AND V
+	F                   AND V
+	F
+
+	
+3.	NOT( F AND F AND V AND V AND NOT( F AND V AND F ) AND V AND NOT( V AND F AND F )  )
+	NOT( F AND F AND V AND V AND NOT( F       AND F ) AND V AND NOT( F       AND F )  )
+	NOT( F AND F AND V AND V AND NOT(      F        ) AND V AND NOT(     F         )  )
+	NOT( F AND F AND V AND V AND           V          AND V AND          V            )
+	NOT(    F    AND V AND V AND           V          AND V AND          V            )
+	NOT(   F           AND V AND           V          AND V AND          V            )
+	NOT(       F             AND           V          AND V AND          V            )
+	NOT(             F                                AND V AND          V            )
+	NOT(              F                                     AND          V            )
+	NOT(                                   F                                          )
+	                                       V                                          
+
+
+4.	NOT( NOT( F AND V XOR F ) AND V XOR F OR V ) AND F XOR V AND F
+	NOT( NOT( F       XOR F ) AND V XOR F OR V ) AND F XOR V AND F
+	NOT( NOT( F             ) AND V XOR F OR V ) AND F XOR V AND F
+	NOT(    V                 AND V XOR F OR V ) AND F XOR V AND F
+	NOT(     V                      XOR F OR V ) AND F XOR V AND F
+	NOT(        V                         OR V ) AND F XOR V AND F
+	NOT(        V                              ) AND F XOR V AND F
+	F                                            AND F XOR V AND F
+                      F                                XOR V AND F
+					     F                                  XOR  F
+                                         F
+
+
+
+
+5.	NOT( NOT( F XOR V XOR V XOR F XOR V XOR F XOR V XOR F AND V AND F AND V AND F ) )
+    NOT( NOT( F XOR V XOR V XOR F XOR V XOR F XOR V XOR F AND F AND V AND F ) )
+	NOT( NOT( F XOR V XOR V XOR F XOR V XOR F XOR V XOR F AND V AND F ) )
+	NOT( NOT( F XOR V XOR V XOR F XOR V XOR F XOR V XOR F AND F ) )
+	NOT( NOT( F XOR V XOR V XOR F XOR V XOR F XOR V XOR F ) )
+	NOT( NOT( V XOR V XOR F XOR V XOR F XOR V XOR F ) )
+	NOT( NOT( F XOR F XOR V XOR F XOR V XOR F ) )
+	NOT( NOT( F XOR V XOR F XOR V XOR F ) )
+	NOT( NOT( V XOR F XOR V XOR F ) )
+	NOT( NOT( V XOR V XOR F ) )
+	NOT( NOT( F XOR F ) )
+	NOT( NOT( F ) )
+	NOT( V )
+	F
+
+
+
+
+6.	V AND F XOR V OR NOT( NOT( F AND V AND F AND V AND NOT( NOT( V AND V AND V ) ) AND V AND F OR V AND F ) AND V )
+
+	V AND F XOR V OR NOT( NOT( F AND V AND F AND V AND NOT( NOT( V AND V ) ) AND V AND F OR V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT( F AND V AND F AND V AND NOT( NOT( V ) ) AND V AND F OR V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT( F AND V AND F AND V AND NOT( F ) AND V AND F OR V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT( F AND V AND F AND V AND V AND V AND F OR V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT( F       AND F AND V AND V AND V AND F OR V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT( F             AND V AND V AND V AND F OR V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT( F                   AND V AND F OR V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT( F                         AND F OR V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT( F                               OR V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT(                                    V AND F ) AND V )
+	V AND F XOR V OR NOT( NOT(                                    F       ) AND V )
+	V AND F XOR V OR NOT( V AND V )
+	V AND F XOR V OR NOT( V )
+	V AND F XOR V OR F
+	F       XOR V OR F
+	V OR F
+	V
+
+
+
+7.	V AND NOT( V AND F OR V AND F ) OR NOT( F XOR V OR F AND V OR F ) XOR NOT( F AND V OR F ) OR NOT( F OR V OR F XOR V ) AND V AND F OR NOT( V AND F AND V AND F )
+
+	V AND NOT( F       OR V AND F ) OR NOT( F XOR V OR  F      OR F ) XOR NOT(  F      OR F ) OR NOT( V      OR F XOR V ) AND V AND F OR NOT( V       AND V AND F )
+	
+	V AND NOT( F OR F ) OR NOT( V OR  F   OR F ) XOR NOT( F ) OR NOT( V OR F XOR V ) AND V AND F OR NOT( V AND F )
+	V AND NOT( F) OR NOT( V   OR F ) XOR V OR NOT( V XOR V ) AND V AND F OR NOT( F )
+	V AND V OR NOT(V ) XOR V OR NOT( F ) AND V AND F OR V
+	V AND V OR F XOR V OR V AND V AND F OR V
+	V       OR F XOR V OR V AND V AND F OR V
+	V       OR F XOR V OR V       AND F OR V
+	V       OR F XOR V OR  F            OR V
+	V            XOR V OR  F            OR V
+	F                  OR  F            OR V
+	F            OR V
+	V
+
+
+
+8.	NOT( NOT( V OR F OR V AND V XOR V ) AND F AND V AND F OR NOT( NOT( V OR F OR V AND V XOR V AND F AND V XOR F ) ) OR NOT( V OR F OR V AND V XOR V AND F AND V XOR F ) )
+
+	NOT( NOT( V OR V XOR V ) AND F AND V AND F OR NOT( NOT( V OR F OR V XOR F XOR F ) ) OR NOT( V OR F OR V XOR F AND V XOR F ) )
+	
+	NOT( NOT( V XOR V ) AND F AND V AND F OR NOT( NOT( V OR V XOR F XOR F ) ) OR NOT( V OR V XOR F AND V XOR F ) )
+	NOT( NOT(F) AND F AND V AND F OR NOT( NOT( V XOR F XOR F ) ) OR NOT(V XOR F AND V XOR F ) )
+	NOT( V AND F AND V AND F OR NOT( NOT( V XOR F ) ) OR NOT(V AND V XOR F ) )
+	NOT( V AND F AND V AND F OR NOT( NOT(V) ) OR NOT(V XOR F ) )
+    NOT( V AND F AND V AND F OR NOT( F ) OR NOT(V) )
+    NOT( F AND V AND F OR V OR F )
+	NOT( F AND F OR V OR F )
+	NOT(F OR V OR F )
+	NOT(V OR F )
+	NOT(V)
+	F
+
+
+
+9.	NOT( V AND F AND V AND F OR NOT( V AND F OR V XOR V AND F XOR V OR F ) OR NOT( V OR F OR V AND V XOR V AND F AND V XOR F ) )
+
+   NOT( F AND V AND F OR NOT( FOR V XOR V AND F XOR V OR F ) OR NOT( V OR F OR V XOR V AND F AND V XOR F ) )
+   NOT( F AND F OR NOT( FOR V XOR F XOR V OR F ) OR NOT( V OR F OR V XOR F AND V XOR F ) )
+   NOT(F OR NOT(V XOR F XOR V OR F )OR NOT( V OR F OR V XOR F XOR F ) )
+   NOT(F OR NOT(V XOR V OR F )OR NOT( V OR V XOR F XOR F ) )
+   NOT(F OR NOT(F OR F )OR NOT( V XOR F XOR F ) )
+   NOT(F OR NOT(F)OR NOT( V XOR F ) )
+   NOT(F OR V OR NOT(V) )
+   NOT(V OR F )
+   NOT(V)}
+   F
+
+   
+10.	NOT( NOT( NOT( NOT( V OR F XOR V AND F OR V AND F ) OR NOT( V AND F OR V ) OR F ) AND V AND F ) OR NOT( V AND F OR NOT(V AND F OR V XOR F) ) )
+	NOT( NOT( NOT( NOT( V OR F XOR V AND F OR V AND F ) OR NOT(F OR V ) OR F ) AND V AND F ) OR NOT( F OR NOT(F OR V XOR F) ) )
+	NOT( NOT( NOT( NOT( V OR F XOR F OR V AND F ) OR NOT(V) OR F ) AND V AND F ) OR NOT( F OR NOT(V XOR F) ) )
+	NOT( NOT( NOT( NOT( V OR F XOR F OR F ) OR F OR F ) AND V AND F ) OR NOT( F OR NOT(V) ) )
+	NOT( NOT( NOT( NOT( V XOR F OR F ) OR F OR F ) AND V AND F ) OR NOT( F OR F) )
+	NOT( NOT( NOT( NOT( V OR F ) OR F OR F ) AND V AND F ) OR NOT( F) )
+	NOT( NOT( NOT( NOT( V ) OR F OR F ) AND V AND F ) OR V )
+	NOT( NOT( NOT( F OR F OR F ) AND V AND F ) OR V )
+	NOT( NOT( NOT( F OR F ) AND V AND F ) OR V )
+	NOT( NOT( NOT( F ) AND V AND F ) OR V )
+	NOT( NOT( V AND V AND F ) OR V )
+	NOT( NOT( V AND F ) OR V )
+	NOT( NOT( F ) OR V )
+	NOT(V OR V )
+	NOT(V)
+	F
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
