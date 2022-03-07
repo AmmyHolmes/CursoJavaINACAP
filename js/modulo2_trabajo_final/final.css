@@ -1,0 +1,49 @@
+body {
+    background-image: url('https://la-motorbit-media.s3.amazonaws.com/2016/10/errores-que-cometes-al-lavar-el-coche-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+    -khtml-opacity: 0.8;
+}
+
+.container {
+    margin: 1%;
+    padding: 2%;
+}
+
+.superior {
+    height: 400px;
+    width: 100%;
+    /* background-image: url('https://www.way.com/way-service/images/listing_image/Listing_WAY602B73E2_img');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen {
+    height: 580px;
+    width: 100%;
+    opacity: 33%;
+}
+
+.row {
+    opacity: initial !important;
+}
+
+.titulo {
+    text-align: center;
+}
+
+#guardar {
+    width: 110px;
+    /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+    margin-left: 31%;
+    transform: translateX(-100%);
+}
+
+.form {
+    background-color: whitesmoke;
+    padding: 2%;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="final.js"></script>
+    <link rel="stylesheet" type="text/css" href="final.css">
+    <title>Auto limpio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <h2>Autolimpio </h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Horario atención</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacta con nosotros aqui</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Estado de tu auto</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="superior">
+
+            <div class="container">
+
+
+                <form class="form" action='' method="get">
+                    <h2 class="titulo">Formulario clientes</h2><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" maxlength="30" required>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" maxlength="30" required>
+
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label for="rut" class="form-label">Rut</label>
+                                <input type="number" class="form-control" id="rut" required>
+
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="mb-3">
+                                <label for="digito" class="form-label">digito</label>
+                                <input type="text" class="form-control" id="digito" maxlength="1" required>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="mb-3">
+                                <label for="Dirección" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="Dirección" maxlength="80" required>
+
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col">
+                            <label for="Comuna" class="form-label">Comuna</label>
+                            <select class="form-select" required id="Comuna">
+                                
+                                <option value="1">Temuco</option>
+                                <option value="2">Padre las casas</option>
+                                <option value="3">Cunco</option>
+                                <option value="3">Carahue</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Tipo de auto</label>
+                            <select class="form-select" required>
+                                
+                                <option value="1">Furgón</option>
+                                <option value="2">Automovil</option>
+                                <option value="3">Camión</option>
+                                <option value="4">Camioneta</option>
+                                <option value="5">Moto</option>
+                    </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="Marca" class="form-label">Marca</label>
+                                <input type="text" class="form-control" id="Marca" maxlength="20">
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="Modelo" class="form-label">Modelo</label>
+                                <input type="text" class="form-control" id="Modelo" maxlength="20">
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="Año" class="form-label">Año</label>
+                                <input type="number" class="form-control" id="Año">
+
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <label for="revision" class="form-label">revision tecnica al dia</label>
+                            <select class="form-select" required id="revision">
+                                
+                                <option value="1">Si</option>
+                                <option value="2">No</option>
+                         
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Encargados</label>
+                            <select class="form-select" aria-label="Default select example">
+                            
+                            <option value="1">Pedro Pérez</option>
+                            <option value="2">Pablo Álvarez</option>
+                            <option value="3">Fernanda Urra</option>
+                            <option value="4">Francisco López</option>
+                            <option value="5">Bernarda Fernández</option>
+                        </select>
+                        </div><br>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Fecha de reserva</label>
+                            <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Hora de reserva</label>
+                            <input type="time" class="form-control" id="validationCustom02" value="Otto" required>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="op1" value="op1">
+                                <label class="form-check-label" for="op1">Lavado exterior con un valor de $7000</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="op2" value="op2">
+                                <label class="form-check-label" for="op2">Lavado de motor con un valor de $5000</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="guardar" onclick="todo()">guardar</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
