@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cuestionario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='cuestionario.css'>
+    <script src="cuestionario.js"></script>
+
+
+    <style>
+        h1{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="central">
+        <div id="diseño" ></div>
+    <h1 style="color:red">Registro Actividad deportiva</h1>
+    <div>
+        <form action="" name="formulario" method="post">
+          <label for="fname">Nombres</label>
+          <input type="text" id="nombres" name="nombres" placeholder="Tu nombre.." required minlength="3">
+      
+          <label for="lname">Primer apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Tu apellido..">
+          <label for="lname">Segundo apellido</label>
+          <input type="text" id="apellido2" name="apellido2" placeholder="Tu segundo apellido.."><br><br>
+          <label for="lname">Edad</label>
+          <input type="number" id="edad" name="edad" placeholder="Tu edad.." ><br><br>
+          <label for="lname">Domicilio</label>
+          <input type="text" id="domicilio" name="domicilio" placeholder="Tu domicilio..">
+      
+          <label for="alergico">Alérgico</label>
+          <select id="alergico" name="alergico">
+            <option value="si">Si</option>
+            <option value="no">No</option>
+          </select>
+          <label for="medicamentos">Medicamentos contraindicados</label>
+          <br><br>
+          <textarea name="textarea" rows="10" cols="50" id="medicamentos"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    
+</body>
+</html>
