@@ -1,0 +1,10 @@
+.main{
+    margin: 6%;
+    font-weight: 900;
+    padding: 6%;
+    background-image:  url(https://thumbs.dreamstime.com/b/modelo-de-la-superficie-del-garabato-de-las-bolas-de-los-deportes-fondo-del-vector-75518615.jpg) ;
+    background-image: transparent;
+}
+button{
+    float: right;
+}
