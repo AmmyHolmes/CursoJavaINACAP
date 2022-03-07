@@ -1,0 +1,31 @@
+
+.centro{
+    background-image: url(https://png.pngtree.com/png-clipart/20200501/ourlarge/pngtree-pink-cute-math-stationery-elements-png-image_2196689.jpg);
+    margin: 2% 12% 2% 12%;
+    padding: 2% 20% 2% 20%;
+ 
+   
+}
+.col{
+    background-color: tan;
+    
+    margin: 5px;
+}
+button{
+   
+    align-items: center !important;
+    padding: 26% !important;
+    margin: 6%  !important;
+    width: 88%;
+}
+.titulo{
+    text-align: center;
+    background-color: salmon;
+}
+.resultado{
+    background-color: seashell;
+    height: 25%;
+    width: 90%;
+    margin: 5%;
+    border: red solid;
+}

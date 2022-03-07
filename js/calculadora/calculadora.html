@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <link href="calculadora.css" rel="stylesheet" type="text/css">
+    <script src="calculadora.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="centro">
+        <div class="titulo">
+            <h2>Calculadora en JavaScript!</h2>
+        </div>
+        <div class="resultado">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" id="anterior" value="anterior"></li>
+              <li class="list-group-item" id="mat" value="mat"></li>
+              <li class="list-group-item" id="posterior" value="posterior"></li>
+                <li class="list-group-item" id="resultado" value="resultado"></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-warning"id="1"value="1" onclick="numero(1)" class="numero">1</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="2" value="2"onclick="numero(2)" class="numero">2</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="3" value="3" onclick="numero(3)" class="numero">3</button>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="4" value="4" onclick="numero(4)" class="numero">4</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="5" value="5" onclick="numero(5)" class="numero">5</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="6" value="6" onclick="numero(6)" class="numero">6</button>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="7" value="7" onclick="numero(7)" class="numero">7</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="8" value="8" onclick="numero(8)" class="numero">8</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="9" value="9" onclick="numero(9)" class="numero">9</button>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="suma" value="+" onclick="operar('+')" class="operador">+</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="resta" value="-" onclick="operar('-')" class="operador">-</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-warning" id="resultado" value="=" onclick="operar('=')" class="operador">=</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+
+</body>
